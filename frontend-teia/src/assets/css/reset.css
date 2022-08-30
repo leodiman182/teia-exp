@@ -1,0 +1,9 @@
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+svg {
+  height: auto;
+  width: 4rem;
+}

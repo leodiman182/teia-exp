@@ -1,0 +1,200 @@
+.menu {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    right: 10px; 
+    z-index: 999;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list-item {
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px;
+    opacity: 0.7;
+    transition: 0.2s;
+    position: relative;
+}
+
+.login-link {
+  color: white;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.login-link:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #FBD8CA;
+}
+/* 
+.list-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: width 0.2s;
+} */
+
+.list-item:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #FBD8CA;
+}
+
+/* .list-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+.logged-in {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+
+.logged-in-name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.logged-in-email {
+  color: white;
+  font-size: 0.7rem;
+}
+
+#icon-close,
+#icon-menu {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+    .menu {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 11;
+        position: fixed;
+        background-color: white;
+        top: 0;
+        text-align: center;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: 0.2s;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        font-weight: bold;
+        padding: 25vh 0;
+    }
+
+    .login-link {
+      display: inline-block;
+      color: #5C3339;
+      font-size: 1rem;
+      padding: 0 20px;
+      position: absolute;
+      bottom: 5vh;
+      left: 0;
+    }
+
+    .logged-in {
+      display: inline-block;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 40rem;
+      right: 0;
+      width: 100%;
+    }
+
+    .logged-in-name {
+      color: #5C3339;
+      padding: 0 20px;
+      font-size: 1.3rem;
+    }
+
+    .logged-in-email {
+      color: #5C3339;
+      padding: 0 20px;
+      font-size: 0.9rem;
+    }
+
+    .logged-in-box {
+      align-items: center;
+    }
+
+    .logout-icon {
+      color: #5C3339;
+      height: 30px;
+      margin: 0 auto;
+    }
+
+    #icon-close,
+    #icon-menu {
+        display: block;
+        visibility: visible;
+    }
+    
+    .icon-menu,
+    .icon-close {
+        cursor: pointer;
+        margin: 0 25px;
+        position: absolute;
+        transition: 0.2s;
+    }
+    
+    .icon-menu {
+        color: white;
+        height: 40px;
+        width: auto;
+        right: 0px;
+        top: 55px;
+    }
+    
+    .icon-close {
+        color: var(--primary);
+        z-index: 12;
+        opacity: 1;    
+        height: 30px;
+        width: auto;
+        right: 0px;
+        top: 25px;
+    }
+
+    .list-item {
+        color: var(--primary);
+        opacity: 1;
+        font-size: 1.5rem;
+    }
+    
+    #icon-close {
+        visibility: hidden;
+    }
+    
+    .show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
