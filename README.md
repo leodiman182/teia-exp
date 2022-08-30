@@ -1,5 +1,5 @@
-# teia.ex
+# Teia EXP
 
-TeiaEx
+## Front-end desenvolvido por Leonardo Diman
 
-teste
+https://teiaexp.com.br/
